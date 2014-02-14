@@ -24,6 +24,9 @@ then
     make install
 fi
 
+# leave root
+exit
+
 if [ -d "/home/vagrant/oerpub" ]
 then
   rm -rf /home/vagrant/oerpub
