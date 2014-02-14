@@ -24,9 +24,9 @@ then
     make install
 fi
 
-if [ -d "/home/vagrant/github-book" ]
+if [ -d "/home/vagrant/github-bookeditor" ]
 then
-  rm -rf /home/vagrant/github-book
+  rm -rf /home/vagrant/github-bookeditor
 fi
 
 cd /vagrant
