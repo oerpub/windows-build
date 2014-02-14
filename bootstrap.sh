@@ -48,6 +48,7 @@ ln -s /vagrant/bookish bookish
 
 cd /var/www
 
-sudo rm bower_components
+sudo rm bower_components node_modules
 
 sudo ln -s /home/vagrant/oerpub/github-bookeditor/bower_components bower_components
+sudo ln -s /home/vagrant/oerpub/github-bookeditor/node_modules node_modules 
