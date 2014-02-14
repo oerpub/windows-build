@@ -23,7 +23,7 @@ then
     sudo npm install -g bower
 fi
 
-sudo rm /home/vagrant/tmp
+sudo rm -r /home/vagrant/tmp
 
 if [ -d "/home/vagrant/oerpub" ]
 then
