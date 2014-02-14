@@ -24,22 +24,22 @@ then
     make install
 fi
 
-if [ -d "~/github-book" ]
+if [ -d "/home/vagrant/github-book" ]
 then
-  rm -rf ~/github-book
+  rm -rf /home/vagrant/github-book
 fi
 
 cd /vagrant
 git submodule update --init --recursive
-cp -r /vagrant/github-bookeditor ~/github-bookeditor
-cd ~/github-bookeditor
+cp -r /vagrant/github-bookeditor /home/vagrant/github-bookeditor
+cd /home/vagrant/github-bookeditor
 
 npm install
 
 rm /var/www/*
 for i in `ls`; do ln -s /vagrant/github-bookeditor/$i /var/www/$1; done
 
-cd ~/github-bookeditor/bower_components
+cd /home/vagrant/github-bookeditor/bower_components
 
 rm -rf aloha-editor bookish
 
@@ -50,4 +50,4 @@ cd /var/www
 
 rm bower_components
 
-ln -s ~/github-bookeditor/bower_components bower_components
+ln -s /home/vagrant/github-bookeditor/bower_components bower_components
