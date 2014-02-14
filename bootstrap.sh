@@ -30,8 +30,6 @@ then
   rm -rf /home/vagrant/oerpub
 fi
 
-cd /vagrant
-git submodule update --init --recursive
 cp -r /vagrant /home/vagrant/oerpub
 cd /home/vagrant/oerpub/github-bookeditor
 
