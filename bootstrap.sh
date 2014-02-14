@@ -36,6 +36,7 @@ cd ~/github-bookeditor
 
 npm install
 
+rm /var/www/*
 for i in `ls`; do ln -s /vagrant/github-bookeditor/$i /var/www/$1; done
 
 cd ~/github-bookeditor/bower_components
