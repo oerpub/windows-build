@@ -25,7 +25,7 @@ then
 fi
 
 # leave root
-exit
+su vagrant
 
 if [ -d "/home/vagrant/oerpub" ]
 then
