@@ -8,7 +8,7 @@ then
     sudo apt-get install -y python-software-properties git curl build-essential apache2
 
     # vboxfs doesn't support sendfile, turn that off
-    echo "EnableSendfile off" >> /etc/apache2/apache2.conf
+    sudo echo "EnableSendfile off" >> /etc/apache2/apache2.conf
 
     sudo service apache2 restart
 
