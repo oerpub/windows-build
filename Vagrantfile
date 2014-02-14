@@ -2,7 +2,7 @@ Vagrant.configure("2") do |config|
     config.vm.box = "precise64"
     config.vm.box_url = "http://files.vagrantup.com/precise32.box"
     config.vm.synced_folder "./", "/vagrant"
-    config.vm.provision :shell, :path => "bootstrap.sh"
+    config.vm.provision :shell, :path => "bootstrap.sh", :privileged => false
     config.vm.network :private_network, ip: '33.33.33.11'
 
     config.vm.provider :virtualbox do |vb|
