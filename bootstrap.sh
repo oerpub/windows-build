@@ -31,14 +31,14 @@ fi
 
 cd /vagrant
 git submodule update --init --recursive
-cp -r /vagrant/github-book ~/github-book
-cd ~/github-book
+cp -r /vagrant/github-bookeditor ~/github-bookeditor
+cd ~/github-bookeditor
 
 npm install
 
-for i in `ls`; do ln -s /vagrant/github-book/$i /var/www/$1; done
+for i in `ls`; do ln -s /vagrant/github-bookeditor/$i /var/www/$1; done
 
-cd ~/github-book/bower_components
+cd ~/github-bookeditor/bower_components
 
 rm -rf aloha-editor bookish
 
@@ -49,4 +49,4 @@ cd /var/www
 
 rm bower_components
 
-ln -s ~/github-book/bower_components bower_components
+ln -s ~/github-bookeditor/bower_components bower_components
