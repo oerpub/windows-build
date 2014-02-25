@@ -1,9 +1,0 @@
-[submodule "github-bookeditor"]
-	path = github-bookeditor
-	url = git@github.com:oerpub/github-bookeditor.git
-[submodule "bookish"]
-	path = bookish
-	url = git@github.com:oerpub/bookish.git
-[submodule "Aloha-Editor"]
-	path = Aloha-Editor
-	url = git@github.com:oerpub/Aloha-Editor.git
